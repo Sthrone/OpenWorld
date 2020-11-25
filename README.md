@@ -1,3 +1,3 @@
-﻿# OpenWorld
+﻿# Open World
 
 Open World je 3D video igra razvijena pomoću LWJGL/OpenGL biblioteke. Igrač iz treće perspektive može da istražuje svet i učestvuje u mnogim aktivnostima i izazovima. Glavni akcenat stavljen je na implementaciju raznih fizičkih pojava i entiteta iz realnosti. Počevši od više vrsta terena, vode, neba, smene dana i noći, gravitacije, kolizije sa objektima, više izvora svetlosti i senki, pa sve do upravljanja entitetima unutar igre, transformacijama kamere i elementima grafičkog interfejsa. Svi modeli i teksture samostalno su izrađeni korišćenjem Blender aplikacije za modelovanje. Engine za renderovanje i fiziku su takođe posebno razvijeni za ovu aplikaciju.
