@@ -1,0 +1,21 @@
+#version 140
+
+in vec2 position;
+
+out vec2 textureCoords;
+
+uniform mat4 transformationMatrix;
+uniform int shape;
+uniform float aspect;
+
+void main(void)
+{
+	vec2 aspectPosition;
+	if (shape == 0)
+		aspectPosition = position;
+	else if (shape == 1)
+		aspectPosition = position * vec2(aspect, 1.0);
+	
+	gl_Position = transformationMatrix * vec4(aspectPosition, 0.0, 1.0);
+	textureCoords = vec2((aspectPosition.x + 1.0) / 2.0, 1 - (aspectPosition.y + 1.0) / 2.0);
+}
